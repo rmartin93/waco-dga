@@ -1,0 +1,12 @@
+.calendar {
+  display: flex;
+  justify-content: center;
+}
+.calendar iframe {
+  border: 2px solid cornflowerblue;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  background: #fff;
+}
+
+/*# sourceMappingURL=calendar.css.map */

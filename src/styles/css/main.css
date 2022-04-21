@@ -1,0 +1,52 @@
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #e0e0e0;
+  color: #4b4b4b;
+  transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+}
+
+.dark {
+  background-color: #4b4b4b;
+  color: #e0e0e0;
+}
+
+.calendar {
+  display: flex;
+  justify-content: center;
+}
+.calendar iframe {
+  border: 2px solid cornflowerblue;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  background: #fff;
+}
+
+/*# sourceMappingURL=main.css.map */

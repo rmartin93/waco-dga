@@ -1,0 +1,93 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+
+.active {
+    display: block !important;
+}
+
+.fade-in, .active, .list-view {
+    animation: fadeIn ease-in-out 1000ms;
+    -webkit-animation: fadeIn ease-in-out 1000ms;
+    -moz-animation: fadeIn ease-in-out 1000ms;
+    -o-animation: fadeIn ease-in-out 1000ms;
+    -ms-animation: fadeIn ease-in-out 1000ms;
+}
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+.fade-out {
+    animation: fadeOut ease 300ms;
+    -webkit-animation: fadeOut ease 300ms;
+    -moz-animation: fadeOut ease 300ms;
+    -o-animation: fadeOut ease 300ms;
+    -ms-animation: fadeOut ease 300ms;
+}
+@keyframes fadeOut {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+@-moz-keyframes fadeOut {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+@-o-keyframes fadeOut {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}

@@ -1,0 +1,45 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+// @use "../abstracts/variables" as var;
+
+/**
+ * Set up a decent box model on the root element
+ */
+ html {
+    font-size: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: rgb(224, 224, 224);
+    color: rgb(75, 75, 75);
+    transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+}
+
+.dark {
+    background-color: rgb(75, 75, 75);
+    color: rgb(224, 224, 224);
+}
